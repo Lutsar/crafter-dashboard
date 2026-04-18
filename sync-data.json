@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-04-18T19:47:02.989Z",
+  "syncedAt": "2026-04-18T20:20:23.501Z",
   "totalGemsSpent": 159600,
   "latestGemBalance": 135100,
   "games": [
@@ -185,9 +185,9 @@
         }
       ],
       "badgeStats": {
-        "total": 271,
-        "hasBadge": 190,
-        "noBadge": 74
+        "total": 300,
+        "hasBadge": 205,
+        "noBadge": 88
       }
     }
   ]
