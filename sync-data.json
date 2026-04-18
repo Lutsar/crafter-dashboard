@@ -1,1 +1,194 @@
-
+{
+  "syncedAt": "2026-04-18T19:46:30.294Z",
+  "totalGemsSpent": 159600,
+  "latestGemBalance": 135100,
+  "games": [
+    {
+      "appID": 1238060,
+      "name": "Dead Space 3",
+      "gemsRequired": 1200,
+      "backgrounds": [],
+      "totalCrafted": 133,
+      "accounts": [
+        {
+          "username": "ce8150109",
+          "lastCraft": "2026-04-18T16:53:42.000Z"
+        },
+        {
+          "username": "ct0008923",
+          "lastCraft": "2026-04-18T16:54:08.000Z"
+        },
+        {
+          "username": "fi1893941",
+          "lastCraft": "2026-04-18T16:54:34.000Z"
+        },
+        {
+          "username": "hhzzz4065",
+          "lastCraft": "2026-04-18T16:54:59.000Z"
+        },
+        {
+          "username": "hhzzz4079",
+          "lastCraft": "2026-04-18T16:55:25.000Z"
+        },
+        {
+          "username": "hhzzz4118",
+          "lastCraft": "2026-04-18T16:55:51.000Z"
+        },
+        {
+          "username": "hhzzz4138",
+          "lastCraft": "2026-04-18T16:57:07.000Z"
+        },
+        {
+          "username": "hhzzz4142",
+          "lastCraft": "2026-04-18T16:57:33.000Z"
+        },
+        {
+          "username": "hhzzz4143",
+          "lastCraft": "2026-04-18T16:57:58.000Z"
+        },
+        {
+          "username": "hhzzz4146",
+          "lastCraft": "2026-04-18T16:58:24.000Z"
+        },
+        {
+          "username": "laitizarpowindsertcarg",
+          "lastCraft": "2026-04-18T16:58:52.000Z"
+        },
+        {
+          "username": "hhzzz4122",
+          "lastCraft": "2026-04-18T16:56:16.000Z"
+        },
+        {
+          "username": "hhzzz4123",
+          "lastCraft": "2026-04-18T16:56:42.000Z"
+        },
+        {
+          "username": "lwakbsh28396",
+          "lastCraft": "2026-04-18T16:59:17.000Z"
+        },
+        {
+          "username": "lymzl4973",
+          "lastCraft": "2026-04-18T16:59:43.000Z"
+        },
+        {
+          "username": "lyubovsveob",
+          "lastCraft": "2026-04-18T17:00:08.000Z"
+        },
+        {
+          "username": "mbgrqbfp10099",
+          "lastCraft": "2026-04-18T17:00:34.000Z"
+        },
+        {
+          "username": "mbyya783971",
+          "lastCraft": "2026-04-18T17:01:00.000Z"
+        },
+        {
+          "username": "mcydcsj156",
+          "lastCraft": "2026-04-18T17:01:25.000Z"
+        },
+        {
+          "username": "yj2877328",
+          "lastCraft": "2026-04-18T17:01:51.000Z"
+        }
+      ],
+      "backgroundStats": [
+        {
+          "account": "xhnr90436",
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-04-12 16:51:00"
+        },
+        {
+          "account": "xsqc01860",
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:51:43"
+        },
+        {
+          "account": "ynve59722",
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:52:35"
+        },
+        {
+          "account": "ysovsllj0391",
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:52:56"
+        },
+        {
+          "account": "yxlwvggj659",
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:53:38"
+        },
+        {
+          "account": "yxqwa008",
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-04-12 16:54:04"
+        },
+        {
+          "account": "yytxm67753",
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-04-12 16:54:50"
+        },
+        {
+          "account": "yzpdkg414",
+          "background_1": 3,
+          "background_2": 0,
+          "background_3": 2,
+          "logged_at": "2026-04-12 16:55:22"
+        },
+        {
+          "account": "zdff92930",
+          "background_1": 1,
+          "background_2": 3,
+          "background_3": 1,
+          "logged_at": "2026-04-12 16:56:13"
+        },
+        {
+          "account": "zdfg37177",
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:56:55"
+        },
+        {
+          "account": "dynfzqcndbwo",
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 17:37:31"
+        },
+        {
+          "account": "fr6ja8wd7za4",
+          "background_1": 1,
+          "background_2": 4,
+          "background_3": 0,
+          "logged_at": "2026-04-12 17:37:58"
+        },
+        {
+          "account": "fuamy130",
+          "background_1": 2,
+          "background_2": 0,
+          "background_3": 3,
+          "logged_at": "2026-04-12 17:38:25"
+        }
+      ],
+      "badgeStats": {
+        "total": 271,
+        "hasBadge": 190,
+        "noBadge": 74
+      }
+    }
+  ]
+}
