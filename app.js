@@ -3,7 +3,7 @@
    Data: GitHub raw sync-data.json (usernames nulled)
    ============================================================ */
 
-const DATA_URL = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/sync-data.json';
+const DATA_URL = 'https://raw.githubusercontent.com/Lutsar/crafter-dashboard/main/sync-data.json';
 const CD_HOURS = 24;
 
 // ============================================================
