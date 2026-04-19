@@ -9,6 +9,88 @@
       "gemsRequired": 1200,
       "backgrounds": [],
       "totalCrafted": 133,
+      "accounts": [
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:53:42.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:54:08.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:54:34.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:54:59.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:55:25.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:55:51.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:57:07.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:57:33.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:57:58.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:58:24.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:58:52.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:56:16.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:56:42.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:59:17.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T16:59:43.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T17:00:08.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T17:00:34.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T17:01:00.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T17:01:25.000Z"
+        },
+        {
+          "username": null,
+          "lastCraft": "2026-04-18T17:01:51.000Z"
+        }
+      ],
       "accountStats": {
         "total": 20,
         "ready": 0,
@@ -21,6 +103,99 @@
         "hasBadge": 205,
         "noBadge": 88
       },
+      "backgroundStats": [
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-04-12 16:51:00"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:51:43"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:52:35"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:52:56"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:53:38"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-04-12 16:54:04"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-04-12 16:54:50"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 0,
+          "background_3": 2,
+          "logged_at": "2026-04-12 16:55:22"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 3,
+          "background_3": 1,
+          "logged_at": "2026-04-12 16:56:13"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-04-12 16:56:55"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-04-12 17:37:31"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 4,
+          "background_3": 0,
+          "logged_at": "2026-04-12 17:37:58"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 0,
+          "background_3": 3,
+          "logged_at": "2026-04-12 17:38:25"
+        }
+      ],
       "bgAvg": {
         "background_1": 2.77,
         "background_2": 1.46,
