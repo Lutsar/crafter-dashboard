@@ -7,31 +7,44 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body data-nav="left">
 
-<div class="header">
-  <div class="header-top">
-    <span class="header-title">⚙ Crafter</span>
-    <span class="sync-badge" id="syncBadge" title="Click to refresh">loading…</span>
+<div class="shell">
+
+  <!-- HEADER — always on top -->
+  <div class="header">
+    <div class="header-top">
+      <span class="header-title">⚙ Crafter</span>
+      <span class="sync-badge" id="syncBadge" title="Click to refresh">loading…</span>
+    </div>
+    <div class="game-tabs" id="gameTabs"></div>
   </div>
-  <div class="game-tabs" id="gameTabs"></div>
-</div>
 
-<div class="nav" id="nav">
-  <button class="nav-btn active" data-tab="cooldown">Cooldown</button>
-  <button class="nav-btn" data-tab="accounts">Accounts</button>
-  <button class="nav-btn" data-tab="backgrounds">Backgrounds</button>
-  <button class="nav-btn" data-tab="table">Table</button>
-  <button class="nav-btn" data-tab="roi">ROI</button>
-  <button class="nav-btn" data-tab="gems">Gems</button>
-</div>
+  <!-- BODY: nav + content, direction set by data-nav on body -->
+  <div class="body-area">
 
-<div id="cooldown"    class="content active"></div>
-<div id="accounts"   class="content"></div>
-<div id="backgrounds" class="content"></div>
-<div id="table"      class="content"></div>
-<div id="roi"        class="content"></div>
-<div id="gems"       class="content"></div>
+    <nav class="nav" id="nav">
+      <button class="nav-btn active" data-tab="cooldown">Cooldown</button>
+      <button class="nav-btn"        data-tab="accounts">Accounts</button>
+      <button class="nav-btn"        data-tab="backgrounds">BG Stats</button>
+      <button class="nav-btn"        data-tab="table">Table</button>
+      <button class="nav-btn"        data-tab="roi">ROI</button>
+      <button class="nav-btn"        data-tab="gems">Gems</button>
+      <button class="nav-btn"        data-tab="settings">⚙</button>
+    </nav>
+
+    <div class="content-area">
+      <div id="cooldown"    class="content active"></div>
+      <div id="accounts"   class="content"></div>
+      <div id="backgrounds" class="content"></div>
+      <div id="table"      class="content"></div>
+      <div id="roi"        class="content"></div>
+      <div id="gems"       class="content"></div>
+      <div id="settings"   class="content"></div>
+    </div>
+
+  </div>
+</div>
 
 <script src="./app.js"></script>
 </body>
