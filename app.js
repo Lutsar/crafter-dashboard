@@ -106,7 +106,6 @@ function render() {
     switch (activeTab) {
         case 'cooldown':    renderCooldown(game);    break;
         case 'accounts':    renderAccounts(game);    break;
-        case 'backgrounds': renderBackgrounds(game); break;
         case 'table':       renderTable(game);       break;
         case 'roi':         renderROI(game);         break;
         case 'gems':        renderGems();            break;
@@ -191,7 +190,9 @@ function renderAccounts(game) {
 
     const st  = game.accountStats || {};
     const bs  = game.badgeStats;
+    const avg = game.bgAvg;
     const tot = bs?.total || 1;
+    const cp  = game.cardsPerSet || 5;
 
     let html = `
     <div class="card">
@@ -210,55 +211,49 @@ function renderAccounts(game) {
         <div class="card">
             <div class="card-title">Badge Accounts</div>
             <div class="stat-grid" style="margin-bottom:12px">
-                <div class="stat-item"><div class="stat-value blue">${bs.hasBadge ?? '?'}</div><div class="stat-label">Used</div></div>
-                <div class="stat-item"><div class="stat-value green">${bs.noBadge ?? '?'}</div><div class="stat-label" style="text-decoration:underline">Unused</div></div>
+                <div class="stat-item"><div class="stat-value blue">${bs.hasBadge ?? '?'}</div><div class="stat-label">Used/Private</div></div>
+                <div class="stat-item"><div class="stat-value green">${bs.noBadge ?? '?'}</div><div class="stat-label"><strong>Unused</strong></div></div>
                 <div class="stat-item"><div class="stat-value">${bs.total ?? '?'}</div><div class="stat-label">Total</div></div>
             </div>
             <div class="progress-wrap">
                 <div class="progress-label"><span>Used ${usedPct}%</span><span>Unused ${unusedPct}%</span></div>
                 <div class="progress-track">
-                    <div class="progress-used"   style="width:${usedPct}%"></div>
+                    <div class="progress-used" style="width:${usedPct}%"></div>
                     <div class="progress-unused" style="width:${unusedPct}%"></div>
                 </div>
             </div>
-            ${bs.availableForCraft != null ? `<div style="margin-top:10px;font-size:12px;color:var(--accent)">▸ ${bs.availableForCraft} available for next craft</div>` : ''}
+            ${bs.fullyUsed != null ? `<div style="margin-top:8px;font-size:11px;color:var(--hint)">All-game badge: <strong>${bs.fullyUsed}</strong></div>` : ''}
+            ${bs.checkedAt ? `<div style="font-size:10px;color:var(--hint)">Last checked: ${bs.checkedAt.slice(0,10)}</div>` : ''}
         </div>`;
     }
+
+    if (avg) {
+        const maxV = Math.max(avg.background_1, avg.background_2, avg.background_3, 0.01);
+        const pct  = n => r2((n / cp) * 100);
+        const bar  = n => r2((n / maxV) * 100);
+        html += `
+        <div class="card">
+            <div class="card-title">Background Drops <span style="font-size:10px;color:var(--text)">(${avg.sampleSize} accounts)</span></div>
+            <div class="bg-bar-wrap">
+                <div class="bg-label"><span>Common (55%)</span><span>${avg.background_1} avg · ${pct(avg.background_1)}%</span></div>
+                <div class="bg-bar-track"><div class="bg-bar-fill c" style="width:${bar(avg.background_1)}%"></div></div>
+            </div>
+            <div class="bg-bar-wrap">
+                <div class="bg-label"><span>Uncommon (27%)</span><span>${avg.background_2} avg · ${pct(avg.background_2)}%</span></div>
+                <div class="bg-bar-track"><div class="bg-bar-fill u" style="width:${bar(avg.background_2)}%"></div></div>
+            </div>
+            <div class="bg-bar-wrap">
+                <div class="bg-label"><span>Rare (18%)</span><span>${avg.background_3} avg · ${pct(avg.background_3)}%</span></div>
+                <div class="bg-bar-track"><div class="bg-bar-fill r" style="width:${bar(avg.background_3)}%"></div></div>
+            </div>
+        </div>`;
+    }
+
     el('accounts').innerHTML = html;
 }
 
-// ============================================================
-//  BACKGROUNDS
-// ============================================================
-function renderBackgrounds(game) {
-    const avg = game?.bgAvg;
-    if (!avg) { el('backgrounds').innerHTML = empty('No background data yet'); return; }
-    const cp  = game.cardsPerSet || 5;
-    const maxV = Math.max(avg.background_1, avg.background_2, avg.background_3, 0.01);
-    const pct  = n => r2((n / cp) * 100);
-    const bar  = n => r2((n / maxV) * 100);
 
-    el('backgrounds').innerHTML = `
-    <div class="card">
-        <div class="card-title">Drop Averages <span style="font-size:10px;color:var(--text)">(${avg.sampleSize} accounts)</span></div>
-        <div class="bg-bar-wrap">
-            <div class="bg-label"><span>Common (55%)</span><span>${avg.background_1} avg · ${pct(avg.background_1)}%</span></div>
-            <div class="bg-bar-track"><div class="bg-bar-fill c" style="width:${bar(avg.background_1)}%"></div></div>
-        </div>
-        <div class="bg-bar-wrap">
-            <div class="bg-label"><span>Uncommon (27%)</span><span>${avg.background_2} avg · ${pct(avg.background_2)}%</span></div>
-            <div class="bg-bar-track"><div class="bg-bar-fill u" style="width:${bar(avg.background_2)}%"></div></div>
-        </div>
-        <div class="bg-bar-wrap">
-            <div class="bg-label"><span>Rare (18%)</span><span>${avg.background_3} avg · ${pct(avg.background_3)}%</span></div>
-            <div class="bg-bar-track"><div class="bg-bar-fill r" style="width:${bar(avg.background_3)}%"></div></div>
-        </div>
-    </div>`;
-}
 
-// ============================================================
-//  TABLE
-// ============================================================
 function renderTable(game) {
     if (!game) { el('table').innerHTML = empty('No data'); return; }
     const st  = game.accountStats || {};
@@ -302,60 +297,46 @@ function renderTable(game) {
 // ============================================================
 function renderROI(game) {
     if (!game) { el('roi').innerHTML = empty('No game data'); return; }
-    el('roi').innerHTML = '<div class="empty"><span class="spinner"></span>Fetching live prices…</div>';
 
-    const backgrounds = game.backgrounds || [];
-    const fetch1      = hash => fetch(
-        'https://steamcommunity.com/market/priceoverview/?appid=753&currency=1&market_hash_name=' + encodeURIComponent(hash)
-    ).then(r => r.json()).catch(() => ({}));
+    const roiData = DATA?.roi?.[game.appID];
+    if (!roiData) {
+        el('roi').innerHTML = empty('No ROI data yet.<br><strong>Run node sync-push.js</strong> to fetch prices.<br><small>ROI is calculated server-side during sync.</small>');
+        return;
+    }
 
-    Promise.all([fetch1('753-Sack of Gems'), ...backgrounds.map(b => fetch1(b.hashName))]).then(([gd, ...bd]) => {
-        const parse     = s => s ? parseFloat(String(s).replace(/[^0-9.]/g, '')) || 0 : 0;
-        const gemsPrice = parse(gd.lowest_price || gd.median_price);
-        const [p1,p2,p3] = bd.map(d => parse(d.lowest_price || d.median_price));
-        const gemsReq   = game.gemsRequired || 1200;
-        const cp        = game.cardsPerSet  || 5;
-        const setCost   = r2((gemsReq / 3) * (gemsPrice / 1000) * 5 * cp);
-        const spinPrc   = r2(setCost / 5);
-        const netEV     = r2((p1 * 0.55 + p2 * 0.27 + p3 * 0.18) * 0.87);
-        const roi       = spinPrc > 0 ? r2(((netEV - spinPrc) / spinPrc) * 100) : null;
-        const sign      = roi != null && roi >= 0 ? '+' : '';
-        const roiCls    = roi != null && roi >= 0 ? 'positive' : 'negative';
-        const bgNames   = backgrounds.map(b => b.hashName || b.key);
+    const { roi, netEV, spinPrc, setCost, gemsPrice, bgPrices, fetchedAt } = roiData;
+    const [p1, p2, p3] = bgPrices || [0,0,0];
+    const sign   = roi != null && roi >= 0 ? '+' : '';
+    const roiCls = roi != null && roi >= 0 ? 'positive' : 'negative';
+    const bgs    = game.backgrounds || [];
+    const ago    = fetchedAt ? timeSince(new Date(fetchedAt)) : '?';
 
-        el('roi').innerHTML = `
-        <div class="card">
-            <div class="card-title">Live ROI — ${game.name}</div>
-            <div class="roi-card">
-                <div class="roi-pct ${roiCls}">${roi != null ? sign + roi.toFixed(1) + '%' : '?'}</div>
-                <div class="roi-details">
-                    <div class="roi-row"><span>netEV</span><span>$${netEV}</span></div>
-                    <div class="roi-row"><span>spinPrc</span><span>$${spinPrc}</span></div>
-                    <div class="roi-row"><span>setCost</span><span>$${setCost}</span></div>
-                </div>
+    el('roi').innerHTML = `
+    <div class="card">
+        <div class="card-title">ROI — ${game.name} <span style="font-size:9px;color:var(--hint)">fetched ${ago}</span></div>
+        <div class="roi-card">
+            <div class="roi-pct ${roiCls}">${roi != null ? sign + roi.toFixed(1) + '%' : '?'}</div>
+            <div class="roi-details">
+                <div class="roi-row"><span>netEV</span><strong>$${netEV}</strong></div>
+                <div class="roi-row"><span>spinPrc</span><strong>$${spinPrc}</strong></div>
+                <div class="roi-row"><span>setCost</span><strong>$${setCost}</strong></div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-title">Price Breakdown</div>
-            <div class="roi-row"><span>Gems sack</span><span>$${gemsPrice}</span></div>
-            <div class="roi-row"><span>${bgNames[0]||'Common'}</span><span>$${p1}</span></div>
-            <div class="roi-row"><span>${bgNames[1]||'Uncommon'}</span><span>$${p2}</span></div>
-            <div class="roi-row"><span>${bgNames[2]||'Rare'}</span><span>$${p3}</span></div>
-        </div>
-        <div class="card" style="font-size:10px;color:var(--hint);line-height:1.9">
-            netEV = (C×0.55 + U×0.27 + R×0.18) × 0.87<br>
-            setCost = (gemsReq/3) × (gemsPrc/1000) × 5 × cardsPerSet<br>
-            spinPrc = setCost / 5<br>
-            ROI = ((netEV − spinPrc) / spinPrc) × 100
-        </div>`;
-    }).catch(err => {
-        el('roi').innerHTML = empty('Price fetch failed.<br>' + err.message + '<br><br><small>Steam may block browser requests. Use /roi in bot instead.</small>');
-    });
+    </div>
+    <div class="card">
+        <div class="card-title">Price Breakdown</div>
+        <div class="roi-row"><span>Gems sack</span><strong>$${gemsPrice}</strong></div>
+        <div class="roi-row"><span>${bgs[0]?.hashName || 'Common'}</span><strong>$${p1}</strong></div>
+        <div class="roi-row"><span>${bgs[1]?.hashName || 'Uncommon'}</span><strong>$${p2}</strong></div>
+        <div class="roi-row"><span>${bgs[2]?.hashName || 'Rare'}</span><strong>$${p3}</strong></div>
+    </div>
+    <div class="card" style="font-size:10px;color:var(--hint);line-height:1.9">
+        netEV = (C×0.55 + U×0.27 + R×0.18) × 0.87<br>
+        setCost = (gemsReq/3) × (gemsPrc/1000) × 5 × cardsPerSet<br>
+        spinPrc = setCost / 5 · ROI = ((netEV − spinPrc) / spinPrc) × 100
+    </div>`;
 }
 
-// ============================================================
-//  GEMS
-// ============================================================
 function renderGems() {
     if (!DATA) { el('gems').innerHTML = empty('No data'); return; }
     let html = `
@@ -374,8 +355,13 @@ function renderGems() {
     if (DATA.games?.length) {
         html += '<div class="card"><div class="card-title">Per Game</div>';
         DATA.games.forEach(g => {
-            const gs = (g.totalCrafted||0)*(g.gemsRequired||0);
-            html += `<div class="gem-row"><span>${g.name}</span><div style="text-align:right"><div class="gem-balance">${gs.toLocaleString()}</div><div class="gem-event">${g.totalCrafted||0} crafts</div></div></div>`;
+            const gs     = (g.totalCrafted||0)*(g.gemsRequired||0);
+            const acc    = g.accountStats?.total || 0;
+            const perAcc = (acc > 0 && gs > 0) ? r2(gs/acc) : null;
+            html += '<div class="gem-row"><div><strong>' + g.name + '</strong>' +
+                '<div class="gem-event">' + (g.totalCrafted||0) + ' crafts · ' + acc + ' accounts</div>' +
+                (perAcc ? '<div class="gem-event">~' + perAcc.toLocaleString() + ' gems/account</div>' : '') +
+                '</div><div style="text-align:right"><div class="gem-balance">' + gs.toLocaleString() + '</div></div></div>';
         });
         html += '</div>';
     }
