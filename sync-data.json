@@ -2,6 +2,7 @@
   "syncedAt": "2026-04-19T17:14:27.231Z",
   "totalGemsSpent": 183600,
   "latestGemBalance": 111100,
+  "roi": null,
   "games": [
     {
       "appID": 1238060,
