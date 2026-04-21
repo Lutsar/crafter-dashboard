@@ -3,7 +3,9 @@
    Data: GitHub raw sync-data.json (usernames nulled)
    ============================================================ */
 
-const DATA_URL = 'https://raw.githubusercontent.com/Lutsar/crafter-dashboard/main/sync-data.json';
+const DATA_URL  = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/sync-data.json';
+const GEMS_URL  = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/sync4git/gems.json';
+const ROI_URL   = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/sync4git/roi.json';
 const CD_HOURS = 24;
 
 // ============================================================
@@ -38,6 +40,8 @@ function setNavPos(pos) {
 //  STATE
 // ============================================================
 let DATA       = null;
+let GEMS_DATA  = null;
+let ROI_DATA   = null;
 let activeGame = 0;
 let activeTab  = 'cooldown';
 let cdFilter   = 'all';
@@ -53,6 +57,8 @@ async function loadData() {
         DATA = await res.json();
         const stale = (Date.now() - new Date(DATA.syncedAt)) > 3 * 3600000;
         setBadge('synced ' + timeSince(new Date(DATA.syncedAt)), stale ? 'stale' : 'fresh');
+        fetch(GEMS_URL + '?t=' + Date.now()).then(r => r.json()).then(d => { GEMS_DATA = d; if (activeTab==='gems') render(); }).catch(()=>{});
+        fetch(ROI_URL  + '?t=' + Date.now()).then(r => r.json()).then(d => { ROI_DATA  = d; if (activeTab==='roi')  render(); }).catch(()=>{});
         buildGameTabs();
         render();
     } catch (err) {
@@ -298,7 +304,8 @@ function renderTable(game) {
 function renderROI(game) {
     if (!game) { el('roi').innerHTML = empty('No game data'); return; }
 
-    const roiData = DATA?.roi?.[game.appID];
+    const roiFromFile = ROI_DATA?.games?.find(g => g.appID === game.appID);
+    const roiData = roiFromFile || DATA?.roi?.[game.appID];
     if (!roiData) {
         el('roi').innerHTML = empty('No ROI data yet.<br><strong>Run node sync-push.js</strong> to fetch prices.<br><small>ROI is calculated server-side during sync.</small>');
         return;
@@ -338,34 +345,86 @@ function renderROI(game) {
 }
 
 function renderGems() {
-    if (!DATA) { el('gems').innerHTML = empty('No data'); return; }
-    let html = `
-    <div class="card">
-        <div class="stat-grid">
-            <div class="stat-item" style="grid-column:span 2">
-                <div class="stat-value green" style="font-size:26px">${DATA.latestGemBalance != null ? DATA.latestGemBalance.toLocaleString() : '?'}</div>
-                <div class="stat-label">Current Gems</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value yellow">${DATA.totalGemsSpent != null ? (DATA.totalGemsSpent/1000).toFixed(1)+'k' : '?'}</div>
-                <div class="stat-label">Total Spent</div>
-            </div>
-        </div>
-    </div>`;
-    if (DATA.games?.length) {
-        html += '<div class="card"><div class="card-title">Per Game</div>';
+    const e  = el('gems');
+    const gd = GEMS_DATA;
+    const game = DATA?.games?.[activeGame];
+    const gameGems = gd?.combinedGames?.find(g => g.appID === game?.appID);
+
+    let html = '';
+
+    const balance = gd?.latestGemBalance ?? DATA?.latestGemBalance;
+    const spent   = gd?.totalGemsSpent   ?? DATA?.totalGemsSpent;
+
+    html += '<div class="card"><div class="stat-grid">' +
+        '<div class="stat-item" style="grid-column:span 2"><div class="stat-value green" style="font-size:24px">' + (balance != null ? balance.toLocaleString() : '?') + '</div><div class="stat-label">Gems in holder</div></div>' +
+        '<div class="stat-item"><div class="stat-value yellow">' + (spent != null ? (spent/1000).toFixed(1)+'k' : '?') + '</div><div class="stat-label">Total spent</div></div>' +
+        '</div></div>';
+
+    // Combined card inventory (-c -b -e style)
+    if (gameGems) {
+        const cp = gameGems.cardsPerSet || 5;
+        const cardList = Object.entries(gameGems.cardCounts || {});
+        const maxSets = gameGems.setsAvailable || 1;
+        html += '<div class="card"><div class="card-title">' + gameGems.name + ' — combined</div>' +
+            '<div class="roi-row"><span>Sets available</span><strong>' + gameGems.setsAvailable + '</strong></div>' +
+            '<div class="roi-row"><span>Booster packs</span><strong>' + gameGems.totalBoosters + '</strong></div>';
+        if (cardList.length) {
+            html += '<div style="margin-top:10px">';
+            cardList.forEach(([name, count]) => {
+                const sets = Math.floor(count / cp);
+                const fill = Math.min(100, (sets / Math.max(maxSets, 1)) * 100);
+                html += '<div class="bg-bar-wrap"><div class="bg-label"><span>' + name + '</span><span>' + count + ' (' + sets + ' sets)</span></div>' +
+                    '<div class="bg-bar-track"><div class="bg-bar-fill c" style="width:' + fill.toFixed(0) + '%"></div></div></div>';
+            });
+            html += '</div>';
+        }
+        html += '</div>';
+    } else {
+        html += '<div class="card" style="color:var(--hint);font-size:11px">Card data not loaded yet.<br>Run /cards in Telegram bot first, then sync.</div>';
+    }
+
+    // Per-account (-a account -b -e style)
+    if (gd?.accounts?.length) {
+        const controlled = gd.accounts.filter(a => a.have_control);
+        const observed   = gd.accounts.filter(a => !a.have_control);
+        const appID      = String(game?.appID || '');
+        const cp         = game?.cardsPerSet || 5;
+
+        const accRow = (acc) => {
+            const cards = acc.cardsByGame?.[appID] || {};
+            const counts = Object.values(cards);
+            const sets = counts.length ? Math.min(...counts.map(c => Math.floor(c/cp))) : 0;
+            const tag = !acc.have_control ? ' <span style="color:var(--hint);font-size:9px">observed</span>' : '';
+            return '<div class="cd-row"><div class="cd-name"><strong>' + acc.label + '</strong>' + tag + '</div>' +
+                '<div class="cd-time ' + (acc.fetched ? 'ready' : '') + '">' +
+                (acc.fetched ? sets + ' sets · ' + (acc.boosterPacks||0) + ' bp' : 'no data') + '</div></div>';
+        };
+
+        html += '<div class="card"><div class="card-title">Per holder account</div>';
+        controlled.forEach(a => { html += accRow(a); });
+        if (observed.length) {
+            html += '<div style="margin-top:8px;font-size:9px;color:var(--hint);letter-spacing:1px;text-transform:uppercase;padding:4px 0">Observed only</div>';
+            observed.forEach(a => { html += accRow(a); });
+        }
+        html += '</div>';
+    }
+
+    // Gems spent per game
+    if (DATA?.games?.length) {
+        html += '<div class="card"><div class="card-title">Gems spent per game</div>';
         DATA.games.forEach(g => {
-            const gs     = (g.totalCrafted||0)*(g.gemsRequired||0);
-            const acc    = g.accountStats?.total || 0;
-            const perAcc = (acc > 0 && gs > 0) ? r2(gs/acc) : null;
+            const gs  = (g.totalCrafted||0) * (g.gemsRequired||0);
+            const acc = g.accountStats?.total || 0;
+            const per = (acc > 0 && gs > 0) ? r2(gs/acc) : null;
             html += '<div class="gem-row"><div><strong>' + g.name + '</strong>' +
                 '<div class="gem-event">' + (g.totalCrafted||0) + ' crafts · ' + acc + ' accounts</div>' +
-                (perAcc ? '<div class="gem-event">~' + perAcc.toLocaleString() + ' gems/account</div>' : '') +
+                (per ? '<div class="gem-event">~' + per.toLocaleString() + ' gems/account</div>' : '') +
                 '</div><div style="text-align:right"><div class="gem-balance">' + gs.toLocaleString() + '</div></div></div>';
         });
         html += '</div>';
     }
-    el('gems').innerHTML = html;
+
+    e.innerHTML = html;
 }
 
 // ============================================================
