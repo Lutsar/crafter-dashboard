@@ -97,7 +97,7 @@
         "ready": 0,
         "onCooldown": 20,
         "nextResetAt": "2026-04-26T18:37:03.000Z",
-        "soonCount": 0
+        "soonCount": 20
       },
       "badgeStats": {
         "total": 300,
