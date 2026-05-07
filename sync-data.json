@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-05-06T14:49:32.720Z",
-  "totalGemsSpent": 865200,
-  "latestGemBalance": 8060,
+  "syncedAt": "2026-05-07T14:48:22.095Z",
+  "totalGemsSpent": 890400,
+  "latestGemBalance": 60860,
   "roi": null,
   "games": [
     {
@@ -9,47 +9,47 @@
       "name": "Dead Space 3",
       "gemsRequired": 1200,
       "backgrounds": [],
-      "totalCrafted": 721,
+      "totalCrafted": 742,
       "accounts": [
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:30:31.000Z"
+          "lastCraft": "2026-05-07T14:39:38.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:32:14.000Z"
+          "lastCraft": "2026-05-07T14:41:24.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:33:06.000Z"
+          "lastCraft": "2026-05-07T14:42:17.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:35:15.000Z"
+          "lastCraft": "2026-05-07T14:44:26.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:35:41.000Z"
+          "lastCraft": "2026-05-07T14:44:52.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:36:07.000Z"
+          "lastCraft": "2026-05-07T14:45:18.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:37:24.000Z"
+          "lastCraft": "2026-05-07T14:46:35.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:37:49.000Z"
+          "lastCraft": "2026-05-07T14:47:00.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:38:15.000Z"
+          "lastCraft": "2026-05-07T14:47:26.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:38:41.000Z"
+          "lastCraft": "2026-05-07T14:47:51.000Z"
         },
         {
           "username": null,
@@ -57,11 +57,11 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:36:32.000Z"
+          "lastCraft": "2026-05-07T14:45:44.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:36:58.000Z"
+          "lastCraft": "2026-05-07T14:46:09.000Z"
         },
         {
           "username": null,
@@ -93,39 +93,39 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:30:57.000Z"
+          "lastCraft": "2026-05-07T14:40:05.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:31:23.000Z"
+          "lastCraft": "2026-05-07T14:40:30.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:31:48.000Z"
+          "lastCraft": "2026-05-07T14:40:56.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:32:40.000Z"
+          "lastCraft": "2026-05-07T14:41:50.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:33:32.000Z"
+          "lastCraft": "2026-05-07T14:42:42.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:33:57.000Z"
+          "lastCraft": "2026-05-07T14:43:08.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:34:23.000Z"
+          "lastCraft": "2026-05-07T14:43:34.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:34:49.000Z"
+          "lastCraft": "2026-05-07T14:44:00.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-06T14:39:07.000Z"
+          "lastCraft": "2026-05-07T14:48:17.000Z"
         },
         {
           "username": null,
@@ -194,10 +194,10 @@
       ],
       "accountStats": {
         "total": 45,
-        "ready": 0,
-        "onCooldown": 45,
-        "nextResetAt": "2026-05-07T14:30:31.000Z",
-        "soonCount": 0
+        "ready": 21,
+        "onCooldown": 24,
+        "nextResetAt": "2026-05-07T14:48:36.000Z",
+        "soonCount": 3
       },
       "badgeStats": {
         "total": 300,
