@@ -194,10 +194,10 @@
       ],
       "accountStats": {
         "total": 45,
-        "ready": 0,
-        "onCooldown": 45,
-        "nextResetAt": "2026-05-09T14:53:09.000Z",
-        "soonCount": 45
+        "ready": 45,
+        "onCooldown": 0,
+        "nextResetAt": null,
+        "soonCount": 0
       },
       "badgeStats": {
         "total": 300,
