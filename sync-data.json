@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-05-15T17:23:15.475Z",
-  "totalGemsSpent": 1303200,
-  "latestGemBalance": 52860,
+  "syncedAt": "2026-05-15T17:29:09.172Z",
+  "totalGemsSpent": 1315200,
+  "latestGemBalance": 40860,
   "roi": null,
   "games": [
     {
@@ -9,7 +9,7 @@
       "name": "Dead Space 3",
       "gemsRequired": 1200,
       "backgrounds": [],
-      "totalCrafted": 1086,
+      "totalCrafted": 1096,
       "accounts": [
         {
           "username": null,
@@ -25,11 +25,11 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:18:32.000Z"
+          "lastCraft": "2026-05-15T17:25:54.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:19:02.000Z"
+          "lastCraft": "2026-05-15T17:26:26.000Z"
         },
         {
           "username": null,
@@ -37,15 +37,15 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:22:53.000Z"
+          "lastCraft": "2026-05-15T17:28:03.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:23:19.000Z"
+          "lastCraft": "2026-05-15T17:28:34.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:23:45.000Z"
+          "lastCraft": "2026-05-15T17:29:06.000Z"
         },
         {
           "username": null,
@@ -57,11 +57,11 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:22:02.000Z"
+          "lastCraft": "2026-05-15T17:26:57.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:22:27.000Z"
+          "lastCraft": "2026-05-15T17:27:28.000Z"
         },
         {
           "username": null,
@@ -113,15 +113,15 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:16:23.000Z"
+          "lastCraft": "2026-05-15T17:24:18.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:16:55.000Z"
+          "lastCraft": "2026-05-15T17:24:48.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-14T17:17:27.000Z"
+          "lastCraft": "2026-05-15T17:25:24.000Z"
         },
         {
           "username": null,
@@ -194,10 +194,10 @@
       ],
       "accountStats": {
         "total": 45,
-        "ready": 9,
-        "onCooldown": 36,
-        "nextResetAt": "2026-05-15T17:23:19.000Z",
-        "soonCount": 28
+        "ready": 10,
+        "onCooldown": 35,
+        "nextResetAt": "2026-05-15T17:29:28.000Z",
+        "soonCount": 17
       },
       "badgeStats": {
         "total": 300,
