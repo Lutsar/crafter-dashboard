@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-05-16T18:43:11.858Z",
+  "syncedAt": "2026-05-16T18:57:58.360Z",
   "totalGemsSpent": 1398000,
   "latestGemBalance": 110860,
   "roi": null,
@@ -1128,13 +1128,69 @@
           "background_2": 1,
           "background_3": 1,
           "logged_at": "2026-05-14 18:07:11"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-05-16 18:54:29"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-05-16 18:54:56"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 0,
+          "background_3": 3,
+          "logged_at": "2026-05-16 18:55:24"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 2,
+          "background_3": 1,
+          "logged_at": "2026-05-16 18:55:58"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-05-16 18:56:30"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-05-16 18:56:57"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-05-16 18:57:25"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-05-16 18:57:57"
         }
       ],
       "bgAvg": {
-        "background_1": 2.73,
+        "background_1": 2.72,
         "background_2": 1.39,
-        "background_3": 0.87,
-        "sampleSize": 132
+        "background_3": 0.89,
+        "sampleSize": 140
       }
     }
   ]
