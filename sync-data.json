@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-05-16T17:35:44.662Z",
-  "totalGemsSpent": 1371600,
-  "latestGemBalance": 137260,
+  "syncedAt": "2026-05-16T17:52:41.006Z",
+  "totalGemsSpent": 1378800,
+  "latestGemBalance": 130060,
   "roi": null,
   "games": [
     {
@@ -9,7 +9,7 @@
       "name": "Dead Space 3",
       "gemsRequired": 1200,
       "backgrounds": [],
-      "totalCrafted": 1143,
+      "totalCrafted": 1149,
       "accounts": [
         {
           "username": null,
@@ -65,19 +65,19 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-15T17:33:26.000Z"
+          "lastCraft": "2026-05-16T17:50:55.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-15T17:33:57.000Z"
+          "lastCraft": "2026-05-16T17:51:21.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-15T17:34:28.000Z"
+          "lastCraft": "2026-05-16T17:51:48.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-15T17:35:03.000Z"
+          "lastCraft": "2026-05-16T17:52:14.000Z"
         },
         {
           "username": null,
@@ -133,11 +133,11 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-15T17:32:19.000Z"
+          "lastCraft": "2026-05-16T17:50:03.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-15T17:32:55.000Z"
+          "lastCraft": "2026-05-16T17:50:29.000Z"
         },
         {
           "username": null,
@@ -194,8 +194,8 @@
       ],
       "accountStats": {
         "total": 45,
-        "ready": 8,
-        "onCooldown": 37,
+        "ready": 2,
+        "onCooldown": 43,
         "nextResetAt": "2026-05-16T18:02:19.000Z",
         "soonCount": 16
       },
