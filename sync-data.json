@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-05-20T20:07:11.222Z",
-  "totalGemsSpent": 1596000,
-  "latestGemBalance": 33660,
+  "syncedAt": "2026-05-20T20:17:29.694Z",
+  "totalGemsSpent": 1606800,
+  "latestGemBalance": 22860,
   "roi": null,
   "games": [
     {
@@ -9,7 +9,7 @@
       "name": "Dead Space 3",
       "gemsRequired": 1200,
       "backgrounds": [],
-      "totalCrafted": 1330,
+      "totalCrafted": 1339,
       "accounts": [
         {
           "username": null,
@@ -89,7 +89,7 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:52:03.000Z"
+          "lastCraft": "2026-05-20T20:14:19.000Z"
         },
         {
           "username": null,
@@ -157,7 +157,7 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:51:36.000Z"
+          "lastCraft": "2026-05-20T20:13:52.000Z"
         },
         {
           "username": null,
@@ -165,37 +165,37 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:52:29.000Z"
+          "lastCraft": "2026-05-20T20:14:44.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:52:55.000Z"
+          "lastCraft": "2026-05-20T20:15:10.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:53:21.000Z"
+          "lastCraft": "2026-05-20T20:15:36.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:53:47.000Z"
+          "lastCraft": "2026-05-20T20:16:03.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:54:13.000Z"
+          "lastCraft": "2026-05-20T20:16:29.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:54:39.000Z"
+          "lastCraft": "2026-05-20T20:16:55.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-05-19T19:55:06.000Z"
+          "lastCraft": "2026-05-20T20:17:21.000Z"
         }
       ],
       "accountStats": {
         "total": 45,
-        "ready": 9,
-        "onCooldown": 36,
+        "ready": 0,
+        "onCooldown": 45,
         "nextResetAt": "2026-05-21T19:51:55.000Z",
         "soonCount": 0
       },
