@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-05-24T22:12:12.405Z",
+  "syncedAt": "2026-05-25T16:03:30.952Z",
   "totalGemsSpent": 1822800,
   "latestGemBalance": 206860,
   "roi": null,
@@ -1394,13 +1394,97 @@
           "background_2": 2,
           "background_3": 1,
           "logged_at": "2026-05-21 20:56:36"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-05-25 15:58:00"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-05-25 15:58:29"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-05-25 15:58:57"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-05-25 15:59:30"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 2,
+          "background_3": 1,
+          "logged_at": "2026-05-25 15:59:58"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-05-25 16:00:31"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-05-25 16:01:00"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-05-25 16:01:28"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 1,
+          "background_3": 3,
+          "logged_at": "2026-05-25 16:02:00"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-05-25 16:02:27"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-05-25 16:02:55"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-05-25 16:03:28"
         }
       ],
       "bgAvg": {
         "background_1": 2.74,
         "background_2": 1.36,
-        "background_3": 0.89,
-        "sampleSize": 170
+        "background_3": 0.91,
+        "sampleSize": 182
       }
     }
   ]
