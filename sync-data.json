@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-06-02T00:53:56.598Z",
+  "syncedAt": "2026-06-02T12:54:34.619Z",
   "totalGemsSpent": 2250000,
   "latestGemBalance": 226260,
   "roi": null,
@@ -1730,13 +1730,55 @@
           "background_2": 2,
           "background_3": 0,
           "logged_at": "2026-06-01 11:30:08"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-06-02 12:51:59"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 2,
+          "background_3": 1,
+          "logged_at": "2026-06-02 12:52:33"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-02 12:53:01"
+        },
+        {
+          "account": null,
+          "background_1": 0,
+          "background_2": 2,
+          "background_3": 3,
+          "logged_at": "2026-06-02 12:53:35"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-06-02 12:54:03"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-02 12:54:32"
         }
       ],
       "bgAvg": {
-        "background_1": 2.71,
+        "background_1": 2.7,
         "background_2": 1.39,
-        "background_3": 0.91,
-        "sampleSize": 218
+        "background_3": 0.92,
+        "sampleSize": 224
       }
     }
   ]
