@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-06-06T13:53:36.427Z",
-  "totalGemsSpent": 2466000,
-  "latestGemBalance": 204440,
+  "syncedAt": "2026-06-07T20:55:38.786Z",
+  "totalGemsSpent": 2518800,
+  "latestGemBalance": 261440,
   "roi": null,
   "games": [
     {
@@ -9,75 +9,75 @@
       "name": "Dead Space 3",
       "gemsRequired": 1200,
       "backgrounds": [],
-      "totalCrafted": 2055,
+      "totalCrafted": 2099,
       "accounts": [
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:03:08.000Z"
+          "lastCraft": "2026-06-07T02:22:56.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:04:51.000Z"
+          "lastCraft": "2026-06-07T02:24:40.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:05:42.000Z"
+          "lastCraft": "2026-06-07T02:25:32.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:07:51.000Z"
+          "lastCraft": "2026-06-07T02:27:42.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:08:16.000Z"
+          "lastCraft": "2026-06-07T02:28:08.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:08:42.000Z"
+          "lastCraft": "2026-06-07T02:28:33.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:09:59.000Z"
+          "lastCraft": "2026-06-07T02:29:51.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:10:25.000Z"
+          "lastCraft": "2026-06-07T02:30:17.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:10:51.000Z"
+          "lastCraft": "2026-06-07T02:30:42.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:11:18.000Z"
+          "lastCraft": "2026-06-07T02:31:08.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:12:35.000Z"
+          "lastCraft": "2026-06-07T02:32:26.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:09:08.000Z"
+          "lastCraft": "2026-06-07T02:28:59.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:09:34.000Z"
+          "lastCraft": "2026-06-07T02:29:25.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:13:52.000Z"
+          "lastCraft": "2026-06-07T02:33:42.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:14:18.000Z"
+          "lastCraft": "2026-06-07T02:34:08.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:14:43.000Z"
+          "lastCraft": "2026-06-07T02:34:34.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:15:09.000Z"
+          "lastCraft": "2026-06-07T02:35:00.000Z"
         },
         {
           "username": null,
@@ -85,118 +85,118 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:16:01.000Z"
+          "lastCraft": "2026-06-07T20:49:09.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:19:01.000Z"
+          "lastCraft": "2026-06-07T20:52:08.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:03:34.000Z"
+          "lastCraft": "2026-06-07T02:23:22.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:04:00.000Z"
+          "lastCraft": "2026-06-07T02:23:48.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:04:25.000Z"
+          "lastCraft": "2026-06-07T02:24:14.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:05:16.000Z"
+          "lastCraft": "2026-06-07T02:25:06.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:06:08.000Z"
+          "lastCraft": "2026-06-07T02:25:58.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:06:33.000Z"
+          "lastCraft": "2026-06-07T02:26:24.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:06:59.000Z"
+          "lastCraft": "2026-06-07T02:26:49.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:07:25.000Z"
+          "lastCraft": "2026-06-07T02:27:15.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:11:43.000Z"
+          "lastCraft": "2026-06-07T02:31:34.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:12:09.000Z"
+          "lastCraft": "2026-06-07T02:32:00.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:13:00.000Z"
+          "lastCraft": "2026-06-07T02:32:51.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:13:26.000Z"
+          "lastCraft": "2026-06-07T02:33:17.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:16:26.000Z"
+          "lastCraft": "2026-06-07T20:49:34.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:16:53.000Z"
+          "lastCraft": "2026-06-07T20:50:00.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:17:18.000Z"
+          "lastCraft": "2026-06-07T20:50:26.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:17:44.000Z"
+          "lastCraft": "2026-06-07T20:50:51.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:18:09.000Z"
+          "lastCraft": "2026-06-07T20:51:17.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:18:35.000Z"
+          "lastCraft": "2026-06-07T20:51:43.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:19:27.000Z"
+          "lastCraft": "2026-06-07T20:52:34.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:19:53.000Z"
+          "lastCraft": "2026-06-07T20:52:59.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:20:19.000Z"
+          "lastCraft": "2026-06-07T20:53:25.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:20:44.000Z"
+          "lastCraft": "2026-06-07T20:53:50.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:21:11.000Z"
+          "lastCraft": "2026-06-07T20:54:16.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:21:36.000Z"
+          "lastCraft": "2026-06-07T20:54:41.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-06T02:22:02.000Z"
+          "lastCraft": "2026-06-07T20:55:08.000Z"
         }
       ],
       "accountStats": {
         "total": 45,
-        "ready": 0,
-        "onCooldown": 45,
-        "nextResetAt": "2026-06-07T02:03:08.000Z",
+        "ready": 1,
+        "onCooldown": 44,
+        "nextResetAt": "2026-06-08T02:22:56.000Z",
         "soonCount": 0
       },
       "badgeStats": {
