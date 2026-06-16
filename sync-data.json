@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-06-16T00:57:56.583Z",
+  "syncedAt": "2026-06-16T01:19:03.708Z",
   "totalGemsSpent": 2950800,
   "latestGemBalance": 412440,
   "roi": null,
@@ -2283,13 +2283,20 @@
           "background_2": 1,
           "background_3": 0,
           "logged_at": "2026-06-16 00:57:56"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-06-16 01:19:03"
         }
       ],
       "bgAvg": {
         "background_1": 2.69,
         "background_2": 1.4,
         "background_3": 0.91,
-        "sampleSize": 297
+        "sampleSize": 298
       }
     }
   ]
