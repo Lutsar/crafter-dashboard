@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-06-24T02:02:37.586Z",
+  "syncedAt": "2026-06-24T02:05:12.943Z",
   "totalGemsSpent": 3362400,
   "latestGemBalance": 840,
   "roi": null,
@@ -194,10 +194,10 @@
       ],
       "accountStats": {
         "total": 45,
-        "ready": 11,
-        "onCooldown": 34,
-        "nextResetAt": "2026-06-24T02:02:57.000Z",
-        "soonCount": 6
+        "ready": 17,
+        "onCooldown": 28,
+        "nextResetAt": "2026-06-25T01:46:30.000Z",
+        "soonCount": 0
       },
       "badgeStats": {
         "total": 300,
