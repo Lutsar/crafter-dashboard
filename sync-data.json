@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-06-25T12:00:15.396Z",
+  "syncedAt": "2026-06-25T18:34:15.758Z",
   "totalGemsSpent": 3436800,
   "latestGemBalance": 276440,
   "roi": null,
@@ -2290,13 +2290,349 @@
           "background_2": 1,
           "background_3": 1,
           "logged_at": "2026-06-16 01:19:03"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 4,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:01:33"
+        },
+        {
+          "account": null,
+          "background_1": 0,
+          "background_2": 3,
+          "background_3": 2,
+          "logged_at": "2026-06-25 18:02:07"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:02:35"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:03:09"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 1,
+          "background_3": 3,
+          "logged_at": "2026-06-25 18:03:38"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:04:07"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:04:36"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:05:10"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:05:38"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:06:11"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:06:48"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 2,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:07:22"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:07:51"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:08:19"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 3,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:08:47"
+        },
+        {
+          "account": null,
+          "background_1": 0,
+          "background_2": 3,
+          "background_3": 2,
+          "logged_at": "2026-06-25 18:09:21"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:09:54"
+        },
+        {
+          "account": null,
+          "background_1": 5,
+          "background_2": 0,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:10:25"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:10:53"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:11:27"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:11:55"
+        },
+        {
+          "account": null,
+          "background_1": 5,
+          "background_2": 0,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:12:30"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:13:04"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:13:33"
+        },
+        {
+          "account": null,
+          "background_1": 5,
+          "background_2": 0,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:14:07"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:14:41"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-06-25 18:15:14"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 2,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:17:57"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:18:42"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:24:21"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 2,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:24:55"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 3,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:25:25"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:25:59"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 2,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:26:34"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 3,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:27:07"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:27:40"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 0,
+          "background_3": 2,
+          "logged_at": "2026-06-25 18:28:13"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:28:47"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:29:20"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:29:53"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:30:33"
+        },
+        {
+          "account": null,
+          "background_1": 3,
+          "background_2": 1,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:31:06"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 0,
+          "background_3": 1,
+          "logged_at": "2026-06-25 18:31:39"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 1,
+          "background_3": 2,
+          "logged_at": "2026-06-25 18:32:08"
+        },
+        {
+          "account": null,
+          "background_1": 1,
+          "background_2": 4,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:32:36"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:33:11"
+        },
+        {
+          "account": null,
+          "background_1": 2,
+          "background_2": 3,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:33:44"
+        },
+        {
+          "account": null,
+          "background_1": 4,
+          "background_2": 1,
+          "background_3": 0,
+          "logged_at": "2026-06-25 18:34:13"
         }
       ],
       "bgAvg": {
-        "background_1": 2.69,
-        "background_2": 1.4,
-        "background_3": 0.91,
-        "sampleSize": 298
+        "background_1": 2.71,
+        "background_2": 1.41,
+        "background_3": 0.88,
+        "sampleSize": 346
       }
     }
   ]
