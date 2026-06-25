@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-06-25T01:59:34.943Z",
-  "totalGemsSpent": 3416400,
-  "latestGemBalance": 296840,
+  "syncedAt": "2026-06-25T12:00:15.396Z",
+  "totalGemsSpent": 3436800,
+  "latestGemBalance": 276440,
   "roi": null,
   "games": [
     {
@@ -9,7 +9,7 @@
       "name": "Dead Space 3",
       "gemsRequired": 1200,
       "backgrounds": [],
-      "totalCrafted": 2847,
+      "totalCrafted": 2864,
       "accounts": [
         {
           "username": null,
@@ -77,19 +77,19 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:26:39.000Z"
+          "lastCraft": "2026-06-25T11:52:50.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:27:06.000Z"
+          "lastCraft": "2026-06-25T11:53:16.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:27:32.000Z"
+          "lastCraft": "2026-06-25T11:53:43.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:19:01.000Z"
+          "lastCraft": "2026-06-25T11:56:54.000Z"
         },
         {
           "username": null,
@@ -141,62 +141,62 @@
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:27:59.000Z"
+          "lastCraft": "2026-06-25T11:54:16.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:28:26.000Z"
+          "lastCraft": "2026-06-25T11:54:42.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:17:16.000Z"
+          "lastCraft": "2026-06-25T11:55:08.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:17:42.000Z"
+          "lastCraft": "2026-06-25T11:55:35.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:18:09.000Z"
+          "lastCraft": "2026-06-25T11:56:01.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:18:35.000Z"
+          "lastCraft": "2026-06-25T11:56:28.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:19:27.000Z"
+          "lastCraft": "2026-06-25T11:57:26.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:19:53.000Z"
+          "lastCraft": "2026-06-25T11:57:53.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:20:19.000Z"
+          "lastCraft": "2026-06-25T11:58:19.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:20:46.000Z"
+          "lastCraft": "2026-06-25T11:58:45.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:21:12.000Z"
+          "lastCraft": "2026-06-25T11:59:11.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:21:39.000Z"
+          "lastCraft": "2026-06-25T11:59:38.000Z"
         },
         {
           "username": null,
-          "lastCraft": "2026-06-24T11:22:06.000Z"
+          "lastCraft": "2026-06-25T12:00:05.000Z"
         }
       ],
       "accountStats": {
         "total": 45,
         "ready": 0,
         "onCooldown": 45,
-        "nextResetAt": "2026-06-25T11:17:16.000Z",
+        "nextResetAt": "2026-06-26T01:47:06.000Z",
         "soonCount": 0
       },
       "badgeStats": {
